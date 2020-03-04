@@ -73,3 +73,19 @@ npm run serve
 ```
 npm run build
 ```
+---
+### 说明
+    webpack-dev-server
+
+    功能：启动一个web服务器，并且可以实时（按下Ctrl + s时）自动在内存中打包并生成 `main.js` 文件。
+  
+    html-webpack-plugin
+    
+    功能： 在内存中根据模板文件生成首页文件，并把上面生成的 `main.js` 以 `script` 标签的方式引入,如下：
+
+```html
+  <body>
+    <h1>webpack 4.0</h1>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+```
